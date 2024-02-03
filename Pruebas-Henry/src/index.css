@@ -5,7 +5,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  font-family: cursive;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 .flex {
