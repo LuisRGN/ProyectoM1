@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Primer proyecto M1</title>
+</head>
+
+<body>
+  <header id="titulo" class="flex">
+    <h1>Luis Gonzalez</h1>
+    <h2>Mi primer proyecto</h2>
+  </header>
+  <main class="flex contenedor-padre">
+    <article class="contenedor">
+      <h2>¿Quién soy?</h2>
+      <p>
+        Hola, mi nombre es Luis Gonzalez, tengo 25 años. Me gusta salir a
+        pedalear, jugar videojuegos y escuchar música.
+      </p>
+    </article>
+    <article class="contenedor">
+      <h2>Mis tecnologías favoritas</h2>
+      <ul class="flex">
+        <li class="flex">
+          <img src="/Pruebas-Henry/asset/images/logo_html.png" alt="HTML" class="img" />
+          HTML
+        </li>
+        <li class="flex">
+          <img src="/Pruebas-Henry/asset/images/css3-logo-png-transparent.png" alt="CSS" class="img" />
+          CSS
+        </li>
+        <li class="flex">
+          <img src="/Pruebas-Henry/asset/images/JavaScript-Logo-2048x1280.png" alt="JavaScript" class="img" />
+          JavaScript
+        </li>
+      </ul>
+    </article>
+  </main>
+  <section class="flex contenedor-padre">
+    <article class="interactivo">
+      <h3>Mis Actividades Favoritas</h3>
+      <form class="flex">
+        <input type="text" placeholder="Nombre de la Actividad" id="nombreActividad" name="nombreActividad" />
+        <textarea rows="4" placeholder="Descripción de la Actividad" id="descripcionActividad"
+          name="descripcionActividad"></textarea>
+        <input type="text" placeholder="Link de la imagen" id="linkImagen" name="linkImagen" />
+        <button id="enviar">Agregar Actividad</button>
+      </form>
+    </article>
+  </section>
+  <section class="flex contenedor-padre" id="contenedorCard">
+    <p id="parrafo">Sin actividades por el momento</p>
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>

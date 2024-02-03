@@ -1,0 +1,162 @@
+body {
+  width: 100%;
+  background-image: url("/Pruebas-Henry/asset/images/5120567.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: cursive;
+}
+
+.flex {
+  display: flex;
+}
+
+.contenedor-padre {
+  justify-content: center;
+}
+
+#titulo {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5rem;
+  color: white;
+}
+
+#titulo h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+#titulo h2 {
+  font-size: 1.25rem;
+}
+
+.contenedor,
+.interactivo,
+.card {
+  width: 18.75rem;
+  background-color: rgb(214 184 217);
+  padding: 1.5rem;
+  border: 1px solid black;
+  margin: 1rem 6rem;
+  border-radius: 5px;
+}
+
+article h2,
+div h2,
+div p,
+section h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.438rem;
+}
+
+article p {
+  font-size: 1.25rem;
+}
+
+.img {
+  width: 3.75rem;
+  transition: transform 0.3s ease;
+}
+
+.img:hover,
+img:hover {
+  transform: scale(1.2);
+}
+
+.contenedor ul {
+  justify-content: space-around;
+}
+
+.contenedor li {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  margin: 0.5rem 0;
+  width: 15.625rem;
+  border-radius: 5px;
+  border: none;
+}
+
+form input {
+  height: 1.563rem;
+}
+
+form button,
+.deleteButton {
+  border: none;
+  margin: 0;
+  padding: 0.5rem;
+  font: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: rgba(112, 128, 85, 0.882);
+}
+
+.deleteButton {
+  background-color: rgba(167, 40, 40, 0.882);
+}
+
+#parrafo {
+  color: white;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 0.9rem;
+}
+
+#contenedorCard {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .contenedor-padre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contenedorCard {
+    flex-wrap: nowrap;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .contenedor-padre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contenedorCard {
+    flex-wrap: nowrap;
+  }
+}
